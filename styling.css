@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+body {
+    background: url(https://wallpaperaccess.com/full/655045.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: 'Trocchi', serif;
+}
+
+#appHeader h1 {
+    font-size: 6vw;
+    text-align: center;
+}
+
+#lapTime {
+    margin: 18px auto;
+    text-align: right;
+    font-size: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    text-align: center;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#lapTime p {
+    margin-bottom: 0px;
+    font-size: 2.8vw
+}
+
+#mainTime {
+    text-align: center;
+    margin: 170px auto 0px auto;
+    font-size: 5vw;
+    font-family: sans-serif;
+}
+
+#controlButtons {
+    margin: 5px auto;
+}
+
+#controlButtons #buttons {
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    border: 1px solid skyblue;
+}
+
+#lap,
+#stop,
+#resume,
+#reset {
+    display: none;
+    ;
+}
+
+#lapContent {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+#LapTable {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    margin: 10px 7px;
+    display: inline-block;
+    width: 30.5%;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#lapcontentHeader {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+
+#lapcontentTime {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+@media (max-width: 600px) {
+    #LapTable {
+        padding: 5px;
+        border: 2px solid skyblue;
+        border-radius: 3px;
+        margin: 10px 7px;
+        display: inline-block;
+        width: 30%;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
